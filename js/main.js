@@ -16,7 +16,8 @@ btn.addEventListener("click",  function() {
     /* Now use the object instance to open connection and say that we want
        to download the data that is GET from the mentioned URL, and not send, that is to POST 
        Also, we need to get different animals-pageCounter for each click */
-    ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
+    // ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
+    ourRequest.open('GET', 'animals-' + pageCounter + '.json');
 
     /*  Now, after we have had an access to the data downloaded, we need to process the data (JSON)
         We are going to use the object to define a method "onload" with an anonymous function */
